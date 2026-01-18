@@ -1,0 +1,21 @@
+# Secrets
+.env
+*.pem
+id_rsa*
+credentials*
+tokens*
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+.conda/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Misc
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

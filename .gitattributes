@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+# Binary artifacts
+*.png binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.7z binary
+*.pt binary
+*.ckpt binary
+*.bin binary
