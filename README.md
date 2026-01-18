@@ -1,24 +1,24 @@
 # Shadowing vs Identifiability
 
-This repository provides a reproducible pipeline for synthetic chaos experiments on hyperbolic toral automorphisms, comparing shadowing-based reconstruction against identifiability limits. It generates controlled instances, runs neural and Newton-based solvers, computes evaluation metrics, and produces the figures used to diagnose the shadowing vs identifiability gap.
+This repository provides a reproducible pipeline for synthetic chaos experiments on hyperbolic toral automorphisms, comparing shadowing-based reconstruction against identifiability limits. The workflow generates controlled instances, runs neural and Newton-based solvers, computes evaluation metrics, and produces the figures used to analyze the shadowing versus identifiability gap.
 
 Python 3.10+ is required. Dependencies are pinned in `requirements.txt`.
 
 ## Repository layout
 
-- `0_domain_study/`: theory notes, proofs, and references
+- `0_domain_study/`: reserved (intentionally empty in this package)
 - `1_datasets/`: synthetic data generation code and dataset metadata
 - `2_data_preparation/`: data cleaning and preparation steps
-- `3_data_exploration/`: exploratory notebooks and quick checks
+- `3_data_exploration/`: exploratory notebooks and diagnostics
 - `4_data_analysis/`: metrics and plotting scripts
 - `5_models/`: system definitions and solver implementations
-- `6_results/`: generated result tables and summaries (kept small)
+- `6_results/`: generated result tables and summaries
 - `7_reports/`: figures, tables, and writeups derived from results
 - `scripts/`: entrypoints and CLI utilities
 - `tests/`: unit tests and smoke checks
-- `docs/`: optional extended documentation
+- `docs/`: extended documentation
 
-## Quickstart (Reproducible)
+## Reproducible workflow
 
 ### Setup
 
@@ -45,18 +45,15 @@ python scripts/run_pipeline.py --mode full --device cpu --num_workers 1 --seed 1
 
 ## Determinism notes
 
-- All CLI entrypoints accept explicit seeds. `scripts/run_pipeline.py` passes fixed seeds to every stage.
-- For strict reproducibility, enable torch deterministic algorithms:
-  - `scripts/run_pipeline.py` defaults to deterministic mode. Use `--no_deterministic` to disable.
-  - `scripts/run_blockA.py` and `scripts/run_blockB.py` accept `--torch_deterministic`.
-- GPU determinism can be slower and is limited by backend availability; if you see deterministic-algorithm errors, rerun with nondeterministic mode.
+- All CLI entrypoints accept explicit seeds; `scripts/run_pipeline.py` propagates fixed seeds to every stage.
+- Deterministic algorithms are supported via `--torch_deterministic` for Block A/B, and are enabled by default in the pipeline runner; use `--no_deterministic` to disable if required by backend constraints.
+- GPU determinism depends on backend support and may reduce performance.
 
 ## Data policy
 
-- All data is synthetic and generated locally by the pipeline. No external downloads are required.
-- Tracked: source code, configuration, and documentation.
-- Ignored by default: generated results and figures under `6_results/` and `7_reports/`.
-  If you want to version small outputs, remove the ignore rules or copy assets to a tracked location.
+- All data are synthetic and generated locally by the pipeline. No external downloads are required.
+- This supplementary package tracks generated data, results, and figures under `6_results/` and `7_reports/`.
+- Recomputations may overwrite existing outputs in these directories.
 
 ## Reproducing results
 
@@ -78,9 +75,9 @@ Expected outputs:
 
 ## Troubleshooting
 
-- Torch install issues: install CPU-only wheels or follow the PyTorch install guide for CUDA.
-- Deterministic mode errors: rerun with `--no_deterministic` (pipeline) or omit `--torch_deterministic` (Block A/B).
-- Import errors: run commands from the repo root so the pipeline paths resolve correctly.
+- Torch installation issues: install CPU-only wheels or follow the PyTorch installation guidance for CUDA-enabled environments.
+- Deterministic mode errors: rerun with `--no_deterministic` in the pipeline or omit `--torch_deterministic` in Block A/B.
+- Import errors: run commands from the repository root so that pipeline paths resolve correctly.
 
 ## License
 
