@@ -69,11 +69,12 @@ python 4_data_analysis/figures/plot_minimax_bound.py --success_csv 6_results/blo
 python 4_data_analysis/figures/plot_horizon.py --summary_csv 6_results/blockB_summary.csv --outdir 7_reports/figures --K 64
 ```
 
-Expected outputs:
-- Results: `6_results/blockA_*.csv`, `6_results/blockB_*.csv`, `6_results/*_meta.json`
-- Figures: `7_reports/figures/money_plot1_collapse_K_over_bq.png`, `7_reports/figures/money_plot2_Lshape.png`, `7_reports/figures/minimax_bound_plot.png`, `7_reports/figures/horizon_plot.png`
 
-## Troubleshooting
+### Manuscript figures
+
+```bash
+python 4_data_analysis/figures/plot_paper_figures.py --success_csv 6_results/blockA_success.csv --outdir 7_reports/figures --A_name A1 --solver newton --K_for_minimax 64
+```## Troubleshooting
 
 - Torch installation issues: install CPU-only wheels or follow the PyTorch installation guidance for CUDA-enabled environments.
 - Deterministic mode errors: rerun with `--no_deterministic` in the pipeline or omit `--torch_deterministic` in Block A/B.
@@ -97,3 +98,4 @@ MIT License. See `LICENSE`.
 ## Contact
 
 cynejarvis.res@gmail.com
+
