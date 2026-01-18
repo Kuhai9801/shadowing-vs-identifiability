@@ -1,0 +1,54 @@
+{
+  "block": "A",
+  "q_list": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sigma": 0.0,
+  "N_inst": 20,
+  "K_max": 64,
+  "K_list": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "eps_success_impute": 0.3043807145043604,
+  "coverage_success_definition": "symbolic (d_H==0) within top-K score-ranked hypotheses",
+  "single_success_definition": "top-1 by solver score",
+  "neural_config": {
+    "K_max": 64,
+    "depth": 4,
+    "width": 64,
+    "lr": 0.001,
+    "max_steps": 1500,
+    "lambda_dyn": 1.0,
+    "obs_ball_radius": 0.0,
+    "obs_tol": 1e-08,
+    "dyn_tol": 1e-06,
+    "early_stop": true,
+    "check_every": 25,
+    "log_every_restarts": 0,
+    "batched_restarts": true,
+    "device": "cuda",
+    "torch_deterministic": false
+  },
+  "newton_config": {
+    "K_max": 64,
+    "max_iter": 50,
+    "tol": 1e-12,
+    "min_step_scale": 1e-06,
+    "backtrack_factor": 0.5
+  },
+  "seed": 12345,
+  "num_workers": 1,
+  "cuda_device_count": 2,
+  "elapsed_seconds": 2031.298944234848
+}
