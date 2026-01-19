@@ -224,14 +224,13 @@ $$
 Using closed forms,
 
 $$
-\sum_{m=1}^{q}|\lambda_u|^{-m}
-=
-\frac{|\lambda_u|^{-1}(1-|\lambda_u|^{-q})}{1-|\lambda_u|^{-1}},
+\sum_{m=1}^{q}\lambda_u^{-m}
+=\frac{\lambda_u^{-1}(1-\lambda_u^{-q})}{1-\lambda_u^{-1}},
 \qquad
-\sum_{m=0}^{q-1}|\lambda_s|^{m}
-=
-\frac{1-|\lambda_s|^{q}}{1-|\lambda_s|}.
+\sum_{m=0}^{q-1}\lambda_s^{m}
+=\frac{1-\lambda_s^{q}}{1-\lambda_s}.
 $$
+
 
 ### 6.2. Interpretation
 
