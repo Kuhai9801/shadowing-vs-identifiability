@@ -317,10 +317,10 @@ If $b_q=0$, the endpoint constraint reduces to $y_q \equiv a_q y_0 \pmod 1$. Und
 Let $\widehat{x}_0:\mathbb{T}\times\mathbb{T}\to\mathbb{T}^2$ be any estimator mapping endpoint observations to an initial condition estimate. Let $\mathrm{dist}$ be the standard torus metric induced by Euclidean wrapping:
 
 $$
-\mathrm{dist}(x,x') := \|\operatorname{wrap}(x-x')\|_2,
+\mathrm{dist}(x,x') := \|\mathrm{wrap}(x-x')\|_2,
 $$
 
-where $\operatorname{wrap}$ maps each coordinate into $[-1/2,1/2)$.
+where $\mathrm{wrap}$ maps each coordinate into $[-1/2,1/2)$.
 
 ### 9.2. Lower bound from branch separation
 
@@ -339,10 +339,10 @@ $$
 By the two-point minimax argument,
 
 $$
-\max \left\{
-\mathrm{dist}\left(\widehat{x}_0(y_0,y_q),x_0^{(m)}\right),
-\mathrm{dist}\left(\widehat{x}_0(y_0,y_q),x_0^{(m+1)}\right)
-\right\}
+\max \lbrace
+\mathrm{dist}(\widehat{x}_0(y_0,y_q),x_0^{(m)}),
+\mathrm{dist}(\widehat{x}_0(y_0,y_q),x_0^{(m+1)})
+\rbrace
 \ge \frac{1}{2|b_q|}.
 $$
 
@@ -350,7 +350,7 @@ Consequently,
 
 $$
 \inf_{\widehat{x}_0}\ \sup_{x_0:\ \mathcal{G}_q(x_0)=(y_0,y_q)}
-\mathrm{dist}\left(\widehat{x}_0(y_0,y_q),x_0\right)
+\mathrm{dist}(\widehat{x}_0(y_0,y_q),x_0)
 \ge \frac{1}{2|b_q|},
 \qquad (|b_q|\ge 2).
 $$
