@@ -8,9 +8,9 @@ This repository studies finite-window shadowing for linear hyperbolic automorphi
 
 ## 1. Problem statement and objectives
 
-Let $F:\mathbb{T}^2\to\mathbb{T}^2$ be a hyperbolic toral automorphism. Given a finite sequence $(x_k)_{k=0}^q$ (a candidate trajectory) and an observation schedule consisting of a single coordinate observed at the endpoints, two mathematically distinct questions arise:
+Let $F:\mathbb{T}^2\to\mathbb{T}^2$ be a hyperbolic toral automorphism. Given a finite sequence $(x_0, x_1, \ldots, x_q)$ (a candidate trajectory) and an observation schedule consisting of a single coordinate observed at the endpoints, two mathematically distinct questions arise:
 
-1. **Finite-window shadowing (existence):** If the defect $r_k = x_{k+1} - F(x_k)$ is small, does there exist an exact orbit $(y_k)_{k=0}^q$ of $F$ remaining uniformly close to $(x_k)_{k=0}^q$ on the window?
+1. **Finite-window shadowing (existence):** If the defect $r_k = x_{k+1} - F(x_k)$ is small, does there exist an exact orbit $(y_0, y_1, \ldots, y_q)$ of $F$ remaining uniformly close to $(x_0, x_1, \ldots, x_q)$ on the window?
 2. **Identifiability (uniqueness):** Given endpoint observations $(H(x_0), H(x_q))$, is the compatible initial condition $x_0$ uniquely determined?
 
 This study provides:
@@ -133,7 +133,7 @@ This constant quantifies the conditioning of the stable and unstable splitting a
 
 ## 4. Finite-window pseudo-orbits and defect
 
-Let $(x_k)_{k=0}^q \subset \mathbb{T}^2$ be a finite sequence. Choose a lift $(x_k)_{k=0}^q \subset \mathbb{R}^2$ and use the same symbols for lifted representatives. Fix the lift convention so that the defect is represented canonically: for each $k$ there exists an integer vector $n_k\in\mathbb{Z}^2$ such that
+Let $(x_0, x_1, \ldots, x_q) \subset \mathbb{T}^2$ be a finite sequence. Choose a lift $(x_0, x_1, \ldots, x_q) \subset \mathbb{R}^2$ and use the same symbols for lifted representatives. Fix the lift convention so that the defect is represented canonically: for each $k$ there exists an integer vector $n_k\in\mathbb{Z}^2$ such that
 
 $$
 r_k := x_{k+1} - A x_k - n_k \in [-1/2,1/2)^2,\qquad k=0,\dots,q-1.
@@ -153,7 +153,7 @@ $$
 
 ### 5.1. Correction recurrence
 
-An exact orbit lift $(y_k)_{k=0}^q\subset\mathbb{R}^2$ satisfies $y_{k+1}=Ay_k+n_k$ for the same integer sequence $(n_k)_{k=0}^{q-1}$ used above. Writing $y_k=x_k+d_k$ yields the inhomogeneous recurrence
+An exact orbit lift $(y_0, y_1, \ldots, y_q)\subset\mathbb{R}^2$ satisfies $y_{k+1}=Ay_k+n_k$ for the same integer sequence $(n_0, n_1, \ldots, n_{q-1})$ used above. Writing $y_k=x_k+d_k$ yields the inhomogeneous recurrence
 
 $$
 d_{k+1} = A d_k - r_k,\qquad k=0,\dots,q-1.
