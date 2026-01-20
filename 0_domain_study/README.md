@@ -1,4 +1,4 @@
-﻿# Domain Study: Finite-Window Shadowing and Identifiability Under Sparse Observations
+# Domain Study: Finite-Window Shadowing and Identifiability Under Sparse Observations
 
 ## Abstract
 
@@ -8,10 +8,10 @@ This repository studies finite-window shadowing for linear hyperbolic automorphi
 
 ## 1. Problem statement and objectives
 
-Let $F:\mathbb{T}^2\to\mathbb{T}^2$ be a hyperbolic toral automorphism. Given a finite sequence $(x_0, x_1, \ldots, x_q)$ (a candidate trajectory) and an observation schedule consisting of a single coordinate observed at the endpoints, two mathematically distinct questions arise:
+Let $F:\mathbb{T}^2\to\mathbb{T}^2$ be a hyperbolic toral automorphism. Given a finite sequence (x<sub>k</sub>) for k = 0, ..., q (a candidate trajectory) and an observation schedule consisting of a single coordinate observed at the endpoints, two mathematically distinct questions arise:
 
-1. **Finite-window shadowing (existence):** If the defect $r_k = x_{k+1} - F(x_k)$ is small, does there exist an exact orbit $(y_0, y_1, \ldots, y_q)$ of $F$ remaining uniformly close to $(x_0, x_1, \ldots, x_q)$ on the window?
-2. **Identifiability (uniqueness):** Given endpoint observations $(H(x_0), H(x_q))$, is the compatible initial condition $x_0$ uniquely determined?
+1. **Finite-window shadowing (existence):** If the defect r<sub>k</sub> = x<sub>k+1</sub> - F(x<sub>k</sub>) is small, does there exist an exact orbit (y<sub>k</sub>) for k = 0, ..., q of F remaining uniformly close to (x<sub>k</sub>) for k = 0, ..., q on the window?
+2. **Identifiability (uniqueness):** Given endpoint observations (H(x<sub>0</sub>), H(x<sub>q</sub>)), is the compatible initial condition x<sub>0</sub> uniquely determined?
 
 This study provides:
 
@@ -35,7 +35,7 @@ so $x \in \mathbb{T}^2$ is an equivalence class of $x \in \mathbb{R}^2$ under in
 
 ### 2.2. Dynamics
 
-Let $A \in SL(2,\mathbb{Z})$ be hyperbolic. It has real eigenvalues $\lambda_u,\lambda_s$ with
+Let $A \in SL(2,\mathbb{Z})$ be hyperbolic. It has real eigenvalues, denoted below, with
 
 $$
 |\lambda_u|>1,\qquad |\lambda_s|<1,\qquad \lambda_u\lambda_s=1.
@@ -57,7 +57,7 @@ A^q=
 \end{pmatrix}.
 $$
 
-The entry $b_q$ is central in the identifiability analysis.
+The entry b<sub>q</sub> is central in the identifiability analysis.
 
 ---
 
@@ -73,7 +73,7 @@ $$
 
 where $E^u$ and $E^s$ are the unstable and stable eigenspaces.
 
-Let $v_u \in E^u$ and $v_s \in E^s$ be eigenvectors and define
+Let v<sub>u</sub> be an eigenvector in $E^u$ and v<sub>s</sub> be an eigenvector in $E^s$, and define
 
 $$
 Q := [\,v_u\ \ v_s\,],\qquad \Lambda := \mathrm{diag}(\lambda_u,\lambda_s),
@@ -133,13 +133,13 @@ This constant quantifies the conditioning of the stable and unstable splitting a
 
 ## 4. Finite-window pseudo-orbits and defect
 
-Let $(x_0, x_1, \ldots, x_q) \subset \mathbb{T}^2$ be a finite sequence. Choose a lift $(x_0, x_1, \ldots, x_q) \subset \mathbb{R}^2$ and use the same symbols for lifted representatives. Fix the lift convention so that the defect is represented canonically: for each $k$ there exists an integer vector $n_k\in\mathbb{Z}^2$ such that
+Let (x<sub>k</sub>) for k = 0, ..., q be a finite sequence in $\mathbb{T}^2$. Choose a lift (x<sub>k</sub>) for k = 0, ..., q in $\mathbb{R}^2$ and use the same symbols for lifted representatives. Fix the lift convention so that the defect is represented canonically: for each k there exists an integer vector n<sub>k</sub> in $\mathbb{Z}^2$ such that
 
 $$
 r_k := x_{k+1} - A x_k - n_k \in [-1/2,1/2)^2,\qquad k=0,\dots,q-1.
 $$
 
-Equivalently, $r_k$ is the canonical representative of the torus difference $x_{k+1}-F(x_k)$.
+Equivalently, r<sub>k</sub> is the canonical representative of the torus difference x<sub>k+1</sub> - F(x<sub>k</sub>).
 
 A uniform defect bound has the form
 
@@ -153,7 +153,7 @@ $$
 
 ### 5.1. Correction recurrence
 
-An exact orbit lift $(y_0, y_1, \ldots, y_q)\subset\mathbb{R}^2$ satisfies $y_{k+1}=Ay_k+n_k$ for the same integer sequence $(n_0, n_1, \ldots, n_{q-1})$ used above. Writing $y_k=x_k+d_k$ yields the inhomogeneous recurrence
+An exact orbit lift (y<sub>k</sub>) for k = 0, ..., q in $\mathbb{R}^2$ satisfies y<sub>k+1</sub> = A y<sub>k</sub> + n<sub>k</sub> for the same integer sequence (n<sub>k</sub>) for k = 0, ..., q - 1 used above. Writing y<sub>k</sub> = x<sub>k</sub> + d<sub>k</sub> yields the inhomogeneous recurrence
 
 $$
 d_{k+1} = A d_k - r_k,\qquad k=0,\dots,q-1.
@@ -181,13 +181,13 @@ $$
 d_{k+1}^s = A d_k^s - r_k^s,\qquad r_k^s:=P_s r_k.
 $$
 
-Using $d_q^u=0$, solve the unstable component backward:
+Using d<sub>q</sub><sup>u</sup> = 0, solve the unstable component backward:
 
 $$
 d_k^u = \sum_{j=k}^{q-1} A^{-(j-k+1)} r_j^u.
 $$
 
-Using $d_0^s=0$, solve the stable component forward:
+Using d<sub>0</sub><sup>s</sup> = 0, solve the stable component forward:
 
 $$
 d_k^s = -\sum_{j=0}^{k-1} A^{k-1-j} r_j^s.
@@ -201,13 +201,13 @@ These representations are the basis for the finite-window bounds.
 
 ### 6.1. Geometric-series bound
 
-Assume $\|r_k\|_2\le\varepsilon$ for all $k$. Then
+Assume the uniform defect bound holds for all k. Then
 
 $$
 \|r_k^u\|_2\le \|P_u\|_2\,\varepsilon,\qquad \|r_k^s\|_2\le \|P_s\|_2\,\varepsilon.
 $$
 
-On $E^u$, $A^{-m}$ contracts with rate $|\lambda_u|^{-m}$; on $E^s$, $A^{m}$ contracts with rate $|\lambda_s|^{m}$. Bounding the series yields
+On $E^u$, $A^{-m}$ contracts with rate `|lambda_u|^{-m}`; on $E^s$, $A^{m}$ contracts with rate `|lambda_s|^{m}`. Bounding the series yields
 
 $$
 \max_{0\le k\le q}\|d_k\|_2\le C(q;A)\,\varepsilon,
@@ -224,21 +224,20 @@ $$
 Using closed forms,
 
 $$
-\sum_{m=1}^{q}\lambda_u^{-m}
-=\frac{\lambda_u^{-1}(1-\lambda_u^{-q})}{1-\lambda_u^{-1}},
+\sum_{m=1}^{q}|\lambda_u|^{-m}
+=\frac{|\lambda_u|^{-1}(1-|\lambda_u|^{-q})}{1-|\lambda_u|^{-1}},
 \qquad
-\sum_{m=0}^{q-1}\lambda_s^{m}
-=\frac{1-\lambda_s^{q}}{1-\lambda_s}.
+\sum_{m=0}^{q-1}|\lambda_s|^{m}
+=\frac{1-|\lambda_s|^{q}}{1-|\lambda_s|}.
 $$
-
 
 ### 6.2. Interpretation
 
 The constant $C(q;A)$ is computable from:
 
-- the unstable and stable rates $|\lambda_u|,|\lambda_s|$,
-- the obliquity factor $\|P_u\|_2=\|P_s\|_2=1/|\sin\theta|$,
-- the window length $q$.
+- the unstable and stable rates `|lambda_u|` and `|lambda_s|`,
+- the obliquity factor `||P_u||_2 = ||P_s||_2 = 1/|sin theta|`,
+- the window length q.
 
 ---
 
@@ -266,13 +265,13 @@ $$
 \mathcal{G}_q:\mathbb{T}^2 \to \mathbb{T}\times\mathbb{T},\qquad \mathcal{G}_q(x_0)=(H(x_0),H(F^q(x_0))).
 $$
 
-Identifiability corresponds to injectivity of $\mathcal{G}_q$.
+Identifiability corresponds to injectivity of this map.
 
 ---
 
 ## 8. Arithmetic characterization of the indistinguishable set
 
-Let $x_0=(x_{0,1},x_{0,2})\in\mathbb{R}^2$ be a lift, so $x_q=A^q x_0$ (as a lift). Using
+Let x<sub>0</sub> = (x<sub>0,1</sub>, x<sub>0,2</sub>) be a lift in $\mathbb{R}^2$, so x<sub>q</sub> = A^q x<sub>0</sub> (as a lift). Using
 
 $$
 A^q=
@@ -292,20 +291,20 @@ $$
 a_q x_{0,1}+b_q x_{0,2}\equiv y_q \pmod{1}.
 $$
 
-Substituting $x_{0,1}\equiv y_0$ yields the congruence
+Substituting x<sub>0,1</sub> congruent to y<sub>0</sub> yields the congruence
 
 $$
 b_q x_{0,2} \equiv y_q - a_q y_0 \pmod{1}.
 $$
 
-Assume $b_q\neq 0$. Then the solution set for $x_{0,2}$ modulo 1 is
+Assume b<sub>q</sub> is nonzero. Then the solution set for x<sub>0,2</sub> modulo 1 is
 
 $$
 x_{0,2}^{(m)} \equiv \frac{y_q-a_q y_0+m}{b_q}\pmod{1},
 \qquad m=0,1,\dots,|b_q|-1.
 $$
 
-If $b_q=0$, the endpoint constraint reduces to $y_q \equiv a_q y_0 \pmod 1$. Under this compatibility, $x_{0,2}$ is unconstrained and the preimage contains a one-dimensional continuum; under incompatibility, the preimage is empty.
+If b<sub>q</sub> = 0, the endpoint constraint reduces to y<sub>q</sub> congruent to a<sub>q</sub> y<sub>0</sub> modulo 1. Under this compatibility, x<sub>0,2</sub> is unconstrained and the preimage contains a one-dimensional continuum; under incompatibility, the preimage is empty.
 
 ---
 
@@ -313,7 +312,13 @@ If $b_q=0$, the endpoint constraint reduces to $y_q \equiv a_q y_0 \pmod 1$. Und
 
 ### 9.1. Estimation model
 
-Let $\widehat{x}_0:\mathbb{T}\times\mathbb{T}\to\mathbb{T}^2$ be any estimator mapping endpoint observations to an initial condition estimate. Let $\mathrm{dist}$ be the standard torus metric induced by Euclidean wrapping:
+Let an estimator be a map from endpoint observations to an initial condition estimate,
+
+$$
+\widehat{x}_0:\mathbb{T}\times\mathbb{T}\to\mathbb{T}^2.
+$$
+
+Let $\mathrm{dist}$ be the standard torus metric induced by Euclidean wrapping:
 
 $$
 \mathrm{dist}(x,x') := \|\mathrm{wrap}(x-x')\|_2,
@@ -323,7 +328,7 @@ where $\mathrm{wrap}$ maps each coordinate into $[-1/2,1/2)$.
 
 ### 9.2. Lower bound from branch separation
 
-Fix $(y_0,y_q)$ such that $|b_q|\ge 2$ and consider two adjacent branches $x_0^{(m)}$ and $x_0^{(m+1)}$ in the preimage set described above. These satisfy
+Fix (y<sub>0</sub>, y<sub>q</sub>) such that |b<sub>q</sub>| >= 2 and consider two adjacent branches x<sub>0</sub><sup>(m)</sup> and x<sub>0</sub><sup>(m+1)</sup> in the preimage set described above. These satisfy
 
 $$
 \mathcal{G}_q(x_0^{(m)})=\mathcal{G}_q(x_0^{(m+1)})=(y_0,y_q),
@@ -338,10 +343,10 @@ $$
 By the two-point minimax argument,
 
 $$
-\max \lbrace
+\max \{
 \mathrm{dist}(\widehat{x}_0(y_0,y_q),x_0^{(m)}),
 \mathrm{dist}(\widehat{x}_0(y_0,y_q),x_0^{(m+1)})
-\rbrace
+\}
 \ge \frac{1}{2|b_q|}.
 $$
 
@@ -356,7 +361,7 @@ $$
 
 ---
 
-## 10. Asymptotics of the branch count via $|b_q|$
+## 10. Asymptotics of the branch count via |b<sub>q</sub>|
 
 Since $A$ is diagonalizable over $\mathbb{R}$,
 
@@ -364,7 +369,7 @@ $$
 A^q = Q \Lambda^q Q^{-1}.
 $$
 
-Each entry of $A^q$ is a linear combination of $\lambda_u^q$ and $\lambda_s^q$. In particular,
+Each entry of $A^q$ is a linear combination of the unstable and stable eigenvalue powers. In particular,
 
 $$
 b_q = \alpha \lambda_u^q + \beta \lambda_s^q
@@ -372,7 +377,7 @@ $$
 
 for constants $\alpha,\beta$ determined by $A$.
 
-Because $|\lambda_s|<1$, the stable contribution decays. Since $b_q$ is an integer sequence and $b_q\not\equiv 0$ for hyperbolic $A\in SL(2,\mathbb{Z})$, it follows that $\alpha\neq 0$. Therefore there exist constants $c_1,c_2>0$ and $q_0$ such that, for all $q\ge q_0$,
+Because the stable eigenvalue has modulus less than 1, the stable contribution decays. Since b<sub>q</sub> is an integer sequence and b<sub>q</sub> is not identically zero for hyperbolic $A\in SL(2,\mathbb{Z})$, the coefficient of the unstable term is nonzero. Therefore there exist constants c1, c2 > 0 and a horizon q0 such that, for all q >= q0,
 
 $$
 c_1|\lambda_u|^q \le |b_q| \le c_2|\lambda_u|^q.
@@ -395,7 +400,7 @@ The numerical component instantiates the preceding constructions in a reproducib
 - Selection of representative hyperbolic matrices $A\in SL(2,\mathbb{Z})$.
 - Construction of pseudo-orbits and exact-orbit corrections over finite windows using the boundary-value formulation.
 - Verification of the explicit shadowing bound by comparing computed corrections to the predicted certificate scale.
-- Branch discovery and auditing for the endpoint observation map via explicit congruence constraints associated with $b_q$.
+- Branch discovery and auditing for the endpoint observation map via explicit congruence constraints associated with b<sub>q</sub>.
 - Empirical evaluation of how restart-based branch discovery saturates relative to the theoretically predicted branch count.
 
 The computations are deterministic conditional on the seeds used for restart initialization. Random restarts are used to locate multiple solutions of a fixed finite-dimensional constraint system.
@@ -404,7 +409,7 @@ The computations are deterministic conditional on the seeds used for restart ini
 
 ## 12. Relation to observability and symbolic dynamics (context)
 
-The endpoint observation map $\mathcal{G}_q$ is a factor map from the state space to an observation space. In linear settings, identifiability relates to observability under restricted measurement operators. In uniformly hyperbolic dynamics, partial observations admit descriptions in terms of induced symbolic factors associated with Markov partitions, with non-injectivity corresponding to multiple symbolic sequences sharing the same observed factor sequence. The present setting isolates the mechanism in a linear toral model where the non-injectivity is controlled by matrix entries of $A^q$.
+The endpoint observation map defined above is a factor map from the state space to an observation space. In linear settings, identifiability relates to observability under restricted measurement operators. In uniformly hyperbolic dynamics, partial observations admit descriptions in terms of induced symbolic factors associated with Markov partitions, with non-injectivity corresponding to multiple symbolic sequences sharing the same observed factor sequence. The present setting isolates the mechanism in a linear toral model where the non-injectivity is controlled by matrix entries of $A^q$.
 
 ---
 
