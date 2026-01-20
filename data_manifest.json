@@ -1,0 +1,96 @@
+{
+  "generated_by": "scripts/validate_data.py",
+  "root": ".",
+  "entries": [
+    {
+      "path": "6_results/blockA_hypotheses.csv",
+      "sha256": "6a461899f0fbc8c6c5e1a747b9e8f28d9154a2d7a813c92da02df56dc573f416",
+      "size_bytes": 14174532
+    },
+    {
+      "path": "6_results/blockA_meta.json",
+      "sha256": "a74de6432fc235644575bdd4cec0f6efc1db015159392ae93a64c4e83219de7d",
+      "size_bytes": 999
+    },
+    {
+      "path": "6_results/blockA_single.csv",
+      "sha256": "4414955b7494b96fa76fec9f89847928a43db3a062d8242d564201f527c102d3",
+      "size_bytes": 183288
+    },
+    {
+      "path": "6_results/blockA_single_summary.csv",
+      "sha256": "f605c36992dee7be5d3833c697b1ab3b8f684c228e817da406057e53104b4b2e",
+      "size_bytes": 2782
+    },
+    {
+      "path": "6_results/blockA_success.csv",
+      "sha256": "e2f413f261eb7f99e447ab549319c25d67b515a396c5a3dbd16f954f16ce2b58",
+      "size_bytes": 1283336
+    },
+    {
+      "path": "6_results/blockA_summary.csv",
+      "sha256": "89888275ca4997cd71c7b4f3f3280e417f811e1b2efd1bfde580d114cfbe6045",
+      "size_bytes": 14356
+    },
+    {
+      "path": "6_results/blockB_hypotheses.csv",
+      "sha256": "307b8e4bffc1c0fd8d39938c0d2e410f7e63ca14174615c3b3716dde990c9145",
+      "size_bytes": 3240563
+    },
+    {
+      "path": "6_results/blockB_meta.json",
+      "sha256": "11553cd827f0268a9376c6b0b0833b3dfa43f004164a24121b9e9649a35679ed",
+      "size_bytes": 1051
+    },
+    {
+      "path": "6_results/blockB_single.csv",
+      "sha256": "6b9fa427943ad3749b5c649ff91d4da694ce00b33af981c0c3dd82e76cc8b055",
+      "size_bytes": 40549
+    },
+    {
+      "path": "6_results/blockB_single_summary.csv",
+      "sha256": "19bacd0d43bc9c28a781665ea44613d57ef615b76604527553f94f66a6d301e3",
+      "size_bytes": 657
+    },
+    {
+      "path": "6_results/blockB_success.csv",
+      "sha256": "5b4aafc99006e6c90181907039dc704b752e09b87edee0ac056e4aef6756e0f8",
+      "size_bytes": 281810
+    },
+    {
+      "path": "6_results/blockB_summary.csv",
+      "sha256": "743cf5aceb6d08e2b6f506ff71c3a23fae577dba1399f0d9c18678ff060914a8",
+      "size_bytes": 3049
+    },
+    {
+      "path": "6_results/branch_audit_A1_q6_K64.csv",
+      "sha256": "1058892cb35c3ab52ed78b80d973269d41f5e7411e1db1fb1602b8cb1ba9d612",
+      "size_bytes": 3332
+    },
+    {
+      "path": "6_results/minimax_direct.csv",
+      "sha256": "6ede9dffdd7daa895ef9346cd1e96fd00fee13b9ab98c46b4884cf8b3b276aa2",
+      "size_bytes": 7621
+    },
+    {
+      "path": "7_reports/figures/fig1_minimax_bound_A1_newton.pdf",
+      "sha256": "88ace7fd60c39abf6c2d6d7cac1a3ee9df31bcdd581738d166951d5df9ec233c",
+      "size_bytes": 14976
+    },
+    {
+      "path": "7_reports/figures/fig2_coverage_success_ratio_A1_newton.pdf",
+      "sha256": "0d9085b5843b5494e17055c8392b6b0acca5cd8d7fd7bbbc46ee993a8e489d1c",
+      "size_bytes": 22370
+    },
+    {
+      "path": "7_reports/figures/minimax_bound_plot.pdf",
+      "sha256": "bf1e5c1983f80b799cb707ce2e78f64ab940f9400b884efb6bc17f3a8c05722f",
+      "size_bytes": 20194
+    },
+    {
+      "path": "7_reports/figures/minimax_bound_plot.png",
+      "sha256": "d4ab30907f7f6f5cc75fd573bebbb4497df7855dd3e5acee7d2cb00c0aa462da",
+      "size_bytes": 102530
+    }
+  ]
+}
